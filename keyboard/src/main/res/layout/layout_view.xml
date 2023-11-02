@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e5e5e5"
+    android:gravity="right"
+    android:orientation="vertical"  >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统键盘录入"
+        android:id="@+id/tv_default_input"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="12dp"
+        android:textColor="#ff1d77fd"
+        android:textSize="14sp"
+        />
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:layout_gravity="center"
+        android:keyBackground="@drawable/select_keyboard_key"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyTextColor="#333333"
+        android:keyTextSize="12sp"
+        android:visibility="visible"
+        android:paddingVertical="3dp"  />
+</LinearLayout>
